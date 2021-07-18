@@ -4,7 +4,7 @@ Then, run `npx sls deploy` to create this
 
 Then in the bucket created, create a new folder called `public` and then upload the images from `menu_icons`
 
-This thing works with appsync and a lambda called test, run the test query to check the response of the images
+This thing works with appsync and a lambda called test, run the test query to check the response of the images -> remember to create an account in cognito, then sign in as this user created
 
 More info of this here:
 
