@@ -10,4 +10,4 @@ More info of this here:
 
 https://stackoverflow.com/questions/68424460/trying-to-get-image-from-lambda-but-i-get-access-denied-with-the-amplify-client
 
-In the roles created, add the policies specified in the question which are CognitoAuthorizedRole and CognitoUnAuthorizedRole
+In the roles created, add the policies specified in the question which are CognitoAuthorizedRole and CognitoUnAuthorizedRole -> remember to replace MY_BUCKET_HERE with the right ARN of your bucket
