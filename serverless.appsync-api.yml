@@ -1,0 +1,21 @@
+name: testapiappsync
+schema: schema.api.graphql
+authenticationType: AMAZON_COGNITO_USER_POOLS
+userPoolConfig:
+  awsRegion: us-east-2
+  defaultAction: ALLOW
+  userPoolId: !Ref CognitoUserPool
+xrayEnabled: true
+mappingTemplatesLocation: mapping-templates
+mappingTemplates:
+  - type: Query
+    field: test
+    dataSource: testFunction
+    request: false
+    response: false
+
+dataSources:
+  - type: AWS_LAMBDA
+    name: testFunction
+    config:
+      functionName: test
